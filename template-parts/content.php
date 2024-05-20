@@ -60,4 +60,4 @@
 	<footer class="entry-footer">
 		<?php haw_starter_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</article><!-- #post -->
