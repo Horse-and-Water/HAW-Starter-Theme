@@ -68,3 +68,12 @@ $ npm install
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+
+Todo
+---------------
+(These are the changes that will make this theme different to _s)
+
+- Add basic variables for fonts and colours
+- Add responsive hamburger menu
+- Add variables and CSS for admin screen styling
+- Tidy all templates to match desired dev workflow
