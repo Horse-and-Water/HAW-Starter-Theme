@@ -143,9 +143,9 @@ function haw_starter_scripts() {
 
 	//wp_enqueue_script( 'haw-starter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), haw_starter_VERSION, true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	// 	wp_enqueue_script( 'comment-reply' );
+	// }
 }
 add_action( 'wp_enqueue_scripts', 'haw_starter_scripts' );
 
