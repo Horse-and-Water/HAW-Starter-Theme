@@ -34,5 +34,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+//get_sidebar(); //uncomment for sidebar
 get_footer();
