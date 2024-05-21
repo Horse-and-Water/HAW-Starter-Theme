@@ -170,6 +170,11 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Customised WP admin login
+ */
+require get_template_directory() . '/inc/custom-login.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 // Enable if using jetpack
