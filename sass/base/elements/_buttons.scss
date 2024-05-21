@@ -1,21 +1,27 @@
 button,
+.button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: $color__border-button;
+input[type="submit"],
+.wp-block-button__link {
+	transition: $tranisition__basic;
+	border: 2px solid $color__black;
 	border-radius: 3px;
-	background: $color__background-button;
-	color: rgba(0, 0, 0, 0.8);
+	background: $color__primary;
+	color: $color__black;
 	line-height: 1;
-	padding: 0.6em 1em 0.4em;
+	padding: 10px 20px;
+    display: inline-block;
+	cursor: pointer;
 
 	&:hover {
-		border-color: $color__border-button-hover;
+		border-color: $color__primary;
+		background-color: $color__black;
+		color: $color__primary;
 	}
 
 	&:active,
 	&:focus {
-		border-color: $color__border-button-focus;
+		border-color: $color__primary;
 	}
 }

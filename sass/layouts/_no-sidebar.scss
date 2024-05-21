@@ -9,3 +9,9 @@
 			"footer";
 	}
 }
+
+main, aside, footer, .masthead-inner {
+	max-width: $size__site-max-width;
+	margin: auto;
+	padding: $size__padding-top-and-bottom $size__padding-sides;
+}

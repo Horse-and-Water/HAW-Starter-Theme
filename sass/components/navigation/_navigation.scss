@@ -1,7 +1,13 @@
-.main-navigation {
-	display: block;
-	width: 100%;
+.masthead-inner {
+	display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+// #primary-menu {
+// 	display: inline-block;
+// }
 
+.main-navigation {
 	ul {
 		display: none;
 		list-style: none;
@@ -9,16 +15,18 @@
 		padding-left: 0;
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
 			top: 100%;
 			left: -999em;
-			z-index: 99999;
+			z-index: 9999;
+			display: block;
+			background: $color__white;
 
 			ul {
 				left: -999em;
 				top: 0;
+				z-index: 99999;
 			}
 
 			li {
@@ -27,6 +35,7 @@
 				&.focus > ul {
 					display: block;
 					left: auto;
+					position: relative;
 				}
 			}
 
@@ -51,7 +60,7 @@
 
 	li {
 		position: relative;
-
+		padding: 0 5px;
 		&:hover > a,
 		&.focus > a {
 		}
@@ -69,20 +78,62 @@
 	}
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
+/* hamburger menu */
+.main-navigation {
+	&.toggled {
+		#haw-hamburger {
+			span:nth-child(2) {
+				opacity: 0;
+			}
+			span:nth-child(1) {
+				-webkit-transform: translateY(13px) rotate(45deg);
+				-ms-transform: translateY(13px) rotate(45deg);
+				-o-transform: translateY(13px) rotate(45deg);
+				transform: translateY(13px) rotate(45deg);
+			}
+			span:nth-child(3) {
+				-webkit-transform: translateY(-13px) rotate(-45deg);
+				-ms-transform: translateY(-13px) rotate(-45deg);
+				-o-transform: translateY(-13px) rotate(-45deg);
+				transform: translateY(-13px) rotate(-45deg);
+			}
+		}
+		ul {
+			display: block;
+		}
+	}
 }
 
-@media screen and (min-width: 37.5em) {
+#haw-hamburger {
+	// position: fixed;
+	// z-index: 999;
+	// top: 32px;
+	// right: 20px;
+	transition: $tranisition__basic;
+	span {
+		width: 50px;
+		height: 5px;
+		background-color: $color__black;
+		display: block;
+		margin: 8px auto;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		border-radius: 3px;
+		&:nth-child(2), &:nth-child(3) {
+			margin-top: 6px;
+		}
+	}
+}
 
+@media screen and (min-width: 1000px) {
 	.menu-toggle {
 		display: none;
 	}
 
 	.main-navigation ul {
 		display: flex;
+		gap: 20px;
 	}
 }
 

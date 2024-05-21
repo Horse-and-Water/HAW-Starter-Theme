@@ -1,0 +1,35 @@
+.black {
+    color: $color__black;
+}
+.white {
+    color: $color__white;
+}
+.grey {
+    color: $color__grey;
+}
+
+.font-heading {
+    font-family: $font__heading;
+}
+.font-body {
+    font-family: $font__body;
+}
+
+// Class for full width row
+.alignfull {
+	margin: 0 calc(50% - 50vw);
+	max-width: 100vw;
+	width: 100vw;
+	&>div:not(.alignfull) {
+		max-width: $size__site-max-width;
+		margin: auto;
+        // add your site padding here 
+		padding: $size__padding-top-and-bottom $size__padding-sides;;
+	}
+}
+
+@media screen and (max-width: 999px) {
+    .alignfull >div:not(.alignfull) {
+        padding: 0 30px;
+    }
+}
