@@ -12,18 +12,18 @@
 		return;
 	}
 
-	const button = siteNavigation.getElementsByTagName( 'button' )[ 0 ];
+	const hamburger = document.getElementById( 'haw-hamburger' );
 
-	// Return early if the button doesn't exist.
-	if ( 'undefined' === typeof button ) {
+	// Return early if the hamburger doesn't exist.
+	if ( 'undefined' === typeof hamburger ) {
 		return;
 	}
 
 	const menu = siteNavigation.getElementsByTagName( 'ul' )[ 0 ];
 
-	// Hide menu toggle button if menu is empty and return early.
+	// Hide menu hamburger toggle button if menu is empty and return early.
 	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
+		hamburger.style.display = 'none';
 		return;
 	}
 
@@ -31,14 +31,14 @@
 		menu.classList.add( 'nav-menu' );
 	}
 
-	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
-	button.addEventListener( 'click', function() {
+	// Toggle the .toggled class and the aria-expanded value each time the hamburger button is clicked.
+	hamburger.addEventListener( 'click', function() {
 		siteNavigation.classList.toggle( 'toggled' );
 
-		if ( button.getAttribute( 'aria-expanded' ) === 'true' ) {
-			button.setAttribute( 'aria-expanded', 'false' );
+		if ( hamburger.getAttribute( 'aria-expanded' ) === 'true' ) {
+			hamburger.setAttribute( 'aria-expanded', 'false' );
 		} else {
-			button.setAttribute( 'aria-expanded', 'true' );
+			hamburger.setAttribute( 'aria-expanded', 'true' );
 		}
 	} );
 
@@ -48,7 +48,7 @@
 
 		if ( ! isClickInside ) {
 			siteNavigation.classList.remove( 'toggled' );
-			button.setAttribute( 'aria-expanded', 'false' );
+			hamburger.setAttribute( 'aria-expanded', 'false' );
 		}
 	} );
 
