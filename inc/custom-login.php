@@ -7,7 +7,7 @@
 
 
 // Add a custom logo to the login form
-// To update the logo replace /img/site-login-logo.png (should be 120 x 120 pixels pixels)
+// To update the logo replace /img/site-login-logo.png (should be 120 x 120 pixels)
 function custom_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
@@ -23,7 +23,7 @@ function custom_login_logo() { ?>
 add_action( 'login_enqueue_scripts', 'custom_login_logo' );
 
 
-// Update the link the image goes to on the login page (the default is wordpress.org)
+// Update the link the image goes to on the login page
 function my_login_logo_url() {
     return home_url();
 }
