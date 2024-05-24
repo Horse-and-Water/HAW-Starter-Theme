@@ -215,7 +215,7 @@ big { font-size: 125%; }
 
 /* Elements
 --------------------------------------------- */
-body { background: #fff; overflow-y: hidden; }
+body, html { background: #fff; overflow-x: hidden; }
 
 hr { background-color: #1da8a1; border: 0; height: 1px; margin-bottom: 1.5em; }
 
@@ -385,6 +385,10 @@ main, aside, footer, .masthead-inner { max-width: 1500px; margin: auto; padding:
 
 .gallery-caption { display: block; }
 
+/* Footer
+--------------------------------------------- */
+/* Page Specific
+--------------------------------------------- */
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
