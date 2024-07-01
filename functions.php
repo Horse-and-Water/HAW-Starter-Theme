@@ -188,3 +188,8 @@ require get_template_directory() . '/custom-admin/custom-login.php';
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * Disable emojis (You can comment this out if your chaching plugin is already disabling emojis)
+ */
+require get_template_directory() . '/inc/disable-emojis.php';
