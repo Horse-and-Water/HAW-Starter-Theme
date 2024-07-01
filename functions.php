@@ -110,7 +110,7 @@ add_action( 'after_setup_theme', 'haw_starter_setup' );
  * @global int $content_width
  */
 function haw_starter_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'haw_starter_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'haw_starter_content_width', 704 );
 }
 add_action( 'after_setup_theme', 'haw_starter_content_width', 0 );
 
@@ -170,11 +170,6 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
- * Customised WP admin login
- */
-require get_template_directory() . '/custom-admin/custom-login.php';
-
-/**
  * Load Jetpack compatibility file.
  */
 // Enable if using jetpack
@@ -193,3 +188,8 @@ if ( class_exists( 'WooCommerce' ) ) {
  * Disable emojis (You can comment this out if your chaching plugin is already disabling emojis)
  */
 require get_template_directory() . '/inc/disable-emojis.php';
+
+/**
+ * Customised WP admin login
+ */
+require get_template_directory() . '/custom-admin/custom-login.php';
