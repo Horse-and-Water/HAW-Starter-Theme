@@ -324,8 +324,6 @@ main, aside, footer, .masthead-inner { max-width: 1500px; margin: auto; padding:
 --------------------------------------------- */
 .sticky { display: block; }
 
-.post, .page { margin: 0 0 1.5em; }
-
 .updated:not(.published) { display: none; }
 
 .page-content, .entry-content, .entry-summary { margin: 1.5em 0 0; }
