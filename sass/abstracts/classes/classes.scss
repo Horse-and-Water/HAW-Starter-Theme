@@ -24,12 +24,13 @@
 		max-width: $size__site-max-width;
 		margin: auto;
         // add your site padding here 
-		padding: $size__padding-top-and-bottom $size__padding-sides;;
+		padding: $size__padding-top-and-bottom $size__padding-full-width-section-sides;
 	}
 }
 
-@media screen and (max-width: 999px) {
-    .alignfull >div:not(.alignfull) {
-        padding: 0 30px;
-    }
-}
+// Uncommnent for responsive styling 
+// @media screen and (max-width: 999px) {
+//     .alignfull >div:not(.alignfull) {
+//         padding: $size__padding-top-and-bottom $size__padding-full-width-section-sides;
+//     }
+// }
