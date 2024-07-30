@@ -143,6 +143,9 @@ function haw_starter_scripts() {
 
 	wp_enqueue_script( 'haw-starter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), haw_starter_VERSION, true );
 
+	// Enqueue custom scripts (uncomment to add custom scripts file)
+	// wp_enqueue_script( 'haw-starter-custom-scripts', get_template_directory_uri() . '/js/custom.js', array(), haw_starter_VERSION, true );
+
 	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 	// 	wp_enqueue_script( 'comment-reply' );
 	// }
@@ -180,9 +183,9 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load WooCommerce compatibility file.
  */
-if ( class_exists( 'WooCommerce' ) ) {
-	require get_template_directory() . '/inc/woocommerce.php';
-}
+// if ( class_exists( 'WooCommerce' ) ) {
+// 	require get_template_directory() . '/inc/woocommerce.php';
+// }
 
 /**
  * Disable emojis (You can comment this out if your chaching plugin is already disabling emojis)
