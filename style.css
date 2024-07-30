@@ -213,7 +213,7 @@ big { font-size: 125%; }
 
 /* Elements
 --------------------------------------------- */
-body, html { background: #fff; overflow-x: hidden; }
+body, html { background: #fff; overflow-x: hidden; scroll-behavior: smooth; }
 
 hr { background-color: #1da8a1; border: 0; height: 1px; margin-bottom: 1.5em; }
 
@@ -248,7 +248,7 @@ a:hover, a:active { outline: 0; }
 
 /* Forms
 --------------------------------------------- */
-button, .button, input[type="button"], input[type="reset"], input[type="submit"], .wp-block-button__link { transition: all 0.3s ease-in-out; border: 2px solid #000; border-radius: 3px; background: #8556b9; color: #000; line-height: 1; padding: 10px 20px; display: inline-block; cursor: pointer; }
+button, .button, input[type="button"], input[type="reset"], input[type="submit"], .wp-block-button__link { transition: all 0.3s ease-in-out; border: 2px solid #000; border-radius: 3px; background: #8556b9; color: #000; line-height: 1; padding: 10px 20px; display: inline-block; cursor: pointer; text-decoration: none; }
 
 button:hover, .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .wp-block-button__link:hover { border-color: #8556b9; background-color: #000; color: #8556b9; }
 
@@ -267,7 +267,9 @@ textarea { width: 100%; }
 --------------------------------------------------------------*/
 .no-sidebar .site { display: grid; grid-template-columns: auto; grid-template-areas: "header" "main" "footer"; }
 
-main, aside, footer, .masthead-inner { max-width: 1500px; margin: auto; padding: 30px 30px; }
+main, footer, header:not(.entry-header) { width: 100vw; }
+
+main, aside, .footer-inner, .masthead-inner { max-width: 1500px; margin: auto; padding: 30px 30px; }
 
 /*--------------------------------------------------------------
 # Components

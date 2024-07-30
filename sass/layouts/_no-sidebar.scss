@@ -10,7 +10,11 @@
 	}
 }
 
-main, aside, footer, .masthead-inner {
+main, footer, header:not(.entry-header) {
+	width: 100vw;
+}
+
+main, aside, .footer-inner, .masthead-inner {
 	max-width: $size__site-max-width;
 	margin: auto;
 	padding: $size__padding-top-and-bottom $size__padding-sides;

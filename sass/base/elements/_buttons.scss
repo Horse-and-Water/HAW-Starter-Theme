@@ -13,6 +13,7 @@ input[type="submit"],
 	padding: 10px 20px;
     display: inline-block;
 	cursor: pointer;
+	text-decoration: none;
 
 	&:hover {
 		border-color: $color__primary;

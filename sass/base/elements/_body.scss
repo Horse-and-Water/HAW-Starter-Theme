@@ -1,4 +1,5 @@
 body, html {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }

@@ -12,10 +12,12 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<?php echo '© ';  bloginfo( 'name' ); echo date(' Y'); ?>
-			<span class="sep"> | </span>
-			<span><a href="https://horseandwater.com.au/" target="_blank" rel="nofollow">H&W.</a></span>
+		<div class="footer-inner">
+			<div class="site-info">
+				<?php echo '© ';  bloginfo( 'name' ); echo date(' Y'); ?>
+				<span class="sep"> | </span>
+				<span><a href="https://horseandwater.com.au/" target="_blank" rel="nofollow">H&W.</a></span>
+			</div>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
