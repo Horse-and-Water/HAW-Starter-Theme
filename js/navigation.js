@@ -97,3 +97,37 @@
 		}
 	}
 }() );
+
+
+// Wait for document load
+document.addEventListener("DOMContentLoaded", function() {
+	/**
+	 * Add or remove '.scrolled' class on masthead when page is scrolled
+	 */
+	const masthead = document.getElementById( 'masthead' );
+	let lastKnownScrollPosition = window.scrollY;
+	let debounceTimeout;
+   
+	const updateIsScrolled = (lastKnownScrollPosition) => {
+		lastKnownScrollPosition >= 50 ? masthead.classList.add('scrolled') : masthead.classList.remove('scrolled');
+	}
+   
+	document.addEventListener("scroll", () => {
+   
+		// If there's a debounce timeout set, clear it
+		if (debounceTimeout) {
+		  clearTimeout(debounceTimeout);
+		}
+	  
+		// Set a new debounce timeout to limit function calls
+		debounceTimeout = setTimeout(() => {
+		  lastKnownScrollPosition = window.scrollY;
+		  updateIsScrolled(lastKnownScrollPosition);
+		}, 100); // Adjust the debounce delay (in milliseconds) as needed
+   
+	});
+   
+	// call on page load to add class to menu if already part way down the page
+	updateIsScrolled(lastKnownScrollPosition);
+
+});
