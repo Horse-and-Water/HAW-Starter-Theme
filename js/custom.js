@@ -3,7 +3,8 @@
 // Wait for document load
 document.addEventListener("DOMContentLoaded", function() {	
 
-    alert('you activated the custom scripts');
+    // To let you know you're loading this file
+    alert('You activated the custom.js file - delete this line to get rid of this annoying message');
 
     // EXAMPLE GLIDE SETUP - Find and set up sliders if their wrapper exists on the page
     // let blogSliderlider = document.getElementsByClassName('blog-glide');
@@ -22,6 +23,15 @@ document.addEventListener("DOMContentLoaded", function() {
     //             }
     //         }
     //     }).mount();
+    // }
+
+    // EXAMPLE/TEST FOR RELLAX.js
+    // const parallaxElements = document.getElementsByClassName('sb-rellax');
+
+    // if (parallaxElements.length > 0) {
+    //     var rellax = new Rellax('.sb-rellax', {
+	// 		breakpoints:[576, 782, 1200]
+	// 	});
     // }
 
 });
