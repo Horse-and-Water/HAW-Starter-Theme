@@ -115,6 +115,11 @@ function haw_starter_content_width() {
 add_action( 'after_setup_theme', 'haw_starter_content_width', 0 );
 
 /**
+ * Uncomment to activate custom post types in custom-post-types.php
+ */
+// require get_template_directory() . '/inc/custom-post-types.php';
+
+/**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
@@ -143,13 +148,13 @@ function haw_starter_scripts() {
 
 	wp_enqueue_script( 'haw-starter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), haw_starter_VERSION, true );
 
-	// Enqueue Glide.js (also uncomment glide under plugins in /sass/style.scss | https://glidejs.com/)
+	// Enable Glide.js (also uncomment glide under plugins in /sass/style.scss | https://glidejs.com/)
 	// wp_enqueue_script( 'glide-js', get_template_directory_uri() . '/js/glide.js', array(), haw_starter_VERSION, true );
 
-	// Enqueue Rellax js (lightweight parallax - uncomment to add to project | https://dixonandmoe.com/rellax/)
+	// Enable Rellax.js (lightweight parallax - uncomment to add to project | https://dixonandmoe.com/rellax/)
 	// wp_enqueue_script( 'glide-js', get_template_directory_uri() . '/js/rellax.js', array(), haw_starter_VERSION, true );
 
-	// Enqueue custom scripts (uncomment to add custom scripts file)
+	// Enable custom scripts (uncomment to add custom scripts file)
 	// wp_enqueue_script( 'haw-starter-custom-scripts', get_template_directory_uri() . '/js/custom.js', array(), haw_starter_VERSION, true );
 
 	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
