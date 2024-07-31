@@ -22,6 +22,12 @@ function haw_starter_body_classes( $classes ) {
 		$classes[] = 'no-sidebar';
 	}
 
+	// Adds page title/template as body class - e.g. 'page-sample-page', 'post-hello-world'
+	global $post;
+	if ( isset( $post ) ) {
+		$classes[] = $post->post_type . '-' . $post->post_name;
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'haw_starter_body_classes' );
