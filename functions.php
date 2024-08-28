@@ -152,7 +152,7 @@ function haw_starter_scripts() {
 	// wp_enqueue_script( 'glide-js', get_template_directory_uri() . '/js/glide.js', array(), haw_starter_VERSION, true );
 
 	// Enable Rellax.js (lightweight parallax - uncomment to add to project | https://dixonandmoe.com/rellax/)
-	// wp_enqueue_script( 'glide-js', get_template_directory_uri() . '/js/rellax.js', array(), haw_starter_VERSION, true );
+	// wp_enqueue_script( 'rellax-js', get_template_directory_uri() . '/js/rellax.js', array(), haw_starter_VERSION, true );
 
 	// Enable custom scripts (uncomment to add custom scripts file)
 	// wp_enqueue_script( 'haw-starter-custom-scripts', get_template_directory_uri() . '/js/custom.js', array(), haw_starter_VERSION, true );
