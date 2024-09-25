@@ -208,3 +208,14 @@ require get_template_directory() . '/inc/disable-emojis.php';
  * Customised WP admin login
  */
 require get_template_directory() . '/custom-admin/custom-login.php';
+
+/**
+ * Add Google Analytics
+ * Add your id in place of YOUR_ID - should be something like G-**********
+ */
+//add_action('wp_head', 'add_google_analytics');
+//function add_google_analytics() { ?>
+	<!-- Google tag (gtag.js) -->
+ 	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ID"></script> -->
+ 	<!-- <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'YOUR_ID'); </script> -->
+<?php //}
