@@ -248,7 +248,7 @@ a:hover, a:active { outline: 0; }
 
 /* Forms
 --------------------------------------------- */
-button, .button, input[type="button"], input[type="reset"], input[type="submit"], .wp-block-button__link { transition: all 0.3s ease-in-out; border: 2px solid #000; border-radius: 3px; background: #8556b9; color: #000; line-height: 1; padding: 10px 20px; display: inline-block; cursor: pointer; text-decoration: none; }
+button, .button, input[type="button"], input[type="reset"], input[type="submit"], .wp-block-button__link { transition: all 0.3s ease-in-out; border: 2px solid #000; border-radius: 3px; background: #8556b9; color: #000; line-height: 1; padding: 10px 20px; display: inline-block; cursor: pointer; text-decoration: none; width: fit-content; height: fit-content; }
 
 button:hover, .button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .wp-block-button__link:hover { border-color: #8556b9; background-color: #000; color: #8556b9; }
 
