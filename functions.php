@@ -143,9 +143,13 @@ add_action( 'widgets_init', 'haw_starter_widgets_init' );
  * Enqueue scripts and styles.
  */
 function haw_starter_scripts() {
+
+	// STYLES
 	wp_enqueue_style( 'haw-starter-style', get_stylesheet_uri(), array(), haw_starter_VERSION );
 	wp_style_add_data( 'haw-starter-style', 'rtl', 'replace' );
 
+
+	// SCRIPTS
 	wp_enqueue_script( 'haw-starter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), haw_starter_VERSION, true );
 
 	// Enable Glide.js (also uncomment glide under plugins in /sass/style.scss | https://glidejs.com/)
@@ -156,6 +160,16 @@ function haw_starter_scripts() {
 
 	// Enable custom scripts (uncomment to add custom scripts file)
 	// wp_enqueue_script( 'haw-starter-custom-scripts', get_template_directory_uri() . '/js/custom.js', array(), haw_starter_VERSION, true );
+
+
+	// FONTS
+	// Enable Adobe Fonts
+	// wp_register_style('adobeFonts', 'add-your-url-here', array(), null);
+	// wp_enqueue_style('adobeFonts');
+
+	// Enable Google Fonts
+	//wp_enqueue_style( 'google-fonts', 'add-your-url-here', false ); 
+
 
 	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 	// 	wp_enqueue_script( 'comment-reply' );
@@ -214,8 +228,8 @@ require get_template_directory() . '/custom-admin/custom-login.php';
  * Add your id in place of YOUR_ID - should be something like G-**********
  */
 //add_action('wp_head', 'add_google_analytics');
-//function add_google_analytics() { ?>
-	<!-- Google tag (gtag.js) -->
- 	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ID"></script> -->
- 	<!-- <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'YOUR_ID'); </script> -->
-<?php //}
+// function add_google_analytics() {
+// 	<!-- Google tag (gtag.js) -->
+//  	<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ID"></script>
+//  	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'YOUR_ID'); </script>
+// }
