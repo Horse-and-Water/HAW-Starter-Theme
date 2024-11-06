@@ -1,3 +1,13 @@
+#masthead {
+	background-color: transparent;
+	transition: $tranisition__basic;
+	position: fixed;
+	z-index: 9999;
+	&.scrolled {
+		background-color: $color__secondary;
+	}
+}
+
 .masthead-inner {
 	display: flex;
     align-items: baseline;
@@ -109,10 +119,11 @@
 
 #haw-hamburger {
 	// position: fixed;
-	// z-index: 999;
-	// top: 32px;
+	z-index: 999;
+	top: 32px;
 	// right: 20px;
 	transition: $tranisition__basic;
+	cursor: pointer;
 	span {
 		width: 50px;
 		height: 5px;

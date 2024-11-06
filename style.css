@@ -193,7 +193,7 @@ body, button, input, select, optgroup, textarea, .wp-block-button__link { color:
 
 h1, h2, h3, h4, h5, h6 { clear: both; }
 
-p { margin-bottom: 1.5em; }
+p { margin: 20px 0; }
 
 dfn, cite, em, i { font-style: italic; }
 
@@ -276,6 +276,10 @@ main, aside, .footer-inner, .masthead-inner { max-width: 1500px; margin: auto; p
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+#masthead { background-color: transparent; transition: all 0.3s ease-in-out; position: fixed; z-index: 9999; }
+
+#masthead.scrolled { background-color: #1da8a1; }
+
 .masthead-inner { display: flex; align-items: baseline; justify-content: space-between; }
 
 .main-navigation ul { display: none; list-style: none; margin: 0; padding-left: 0; }
@@ -303,7 +307,7 @@ main, aside, .footer-inner, .masthead-inner { max-width: 1500px; margin: auto; p
 
 .main-navigation.toggled ul { display: block; }
 
-#haw-hamburger { transition: all 0.3s ease-in-out; }
+#haw-hamburger { z-index: 999; top: 32px; transition: all 0.3s ease-in-out; cursor: pointer; }
 
 #haw-hamburger span { width: 50px; height: 5px; background-color: #000; display: block; margin: 8px auto; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; border-radius: 3px; }
 
