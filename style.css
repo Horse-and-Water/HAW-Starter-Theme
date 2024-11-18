@@ -267,7 +267,7 @@ textarea { width: 100%; }
 --------------------------------------------------------------*/
 .no-sidebar .site { display: grid; grid-template-columns: auto; grid-template-areas: "header" "main" "footer"; }
 
-main, footer, header:not(.entry-header) { width: 100vw; }
+main, footer, header:not(.entry-header) { width: 100%; }
 
 main, aside, .footer-inner, .masthead-inner { max-width: 1500px; margin: auto; padding: 30px 30px; }
 
@@ -280,7 +280,12 @@ main, aside, .footer-inner, .masthead-inner { max-width: 1500px; margin: auto; p
 
 #masthead.scrolled { background-color: #1da8a1; }
 
-.masthead-inner { display: flex; align-items: baseline; justify-content: space-between; }
+.masthead-inner { display: flex; align-items: baseline; justify-content: space-between; align-items: center; }
+
+#site-navigation { display: flex; flex-direction: row; align-items: center; gap: 20px; }
+
+@media screen and (max-width: 999px) { #primary-menu { display: flex; position: fixed; z-index: 900; top: 0; right: -200%; height: 100dvh; padding: 30px; background: #1da8a1; transition: all 0.3s ease-in-out; box-shadow: 0 0 22px #00000082; width: 100%; }
+	.toggled #primary-menu { right: 0; } }
 
 .main-navigation ul { display: none; list-style: none; margin: 0; padding-left: 0; }
 
@@ -305,7 +310,7 @@ main, aside, .footer-inner, .masthead-inner { max-width: 1500px; margin: auto; p
 
 .main-navigation.toggled #haw-hamburger span:nth-child(3) { -webkit-transform: translateY(-13px) rotate(-45deg); -ms-transform: translateY(-13px) rotate(-45deg); -o-transform: translateY(-13px) rotate(-45deg); transform: translateY(-13px) rotate(-45deg); }
 
-.main-navigation.toggled ul { display: block; }
+@media screen and (max-width: 999px) { .main-navigation.toggled ul { display: block; } }
 
 #haw-hamburger { z-index: 999; top: 32px; transition: all 0.3s ease-in-out; cursor: pointer; }
 

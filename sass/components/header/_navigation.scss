@@ -12,6 +12,7 @@
 	display: flex;
     align-items: baseline;
     justify-content: space-between;
+	align-items: center;
 }
 // #primary-menu {
 // 	display: inline-block;
@@ -19,6 +20,32 @@
 // .custom-logo img {
 // 	max-width: 50%;
 // }
+
+#site-navigation {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+}
+
+@media screen and (max-width: 999px) {
+	#primary-menu  {
+		display: flex;
+		position: fixed;
+		z-index: 900;
+		top: 0;
+		right: -200%;
+		height: 100dvh;
+		padding: 30px;
+		background: $color__secondary;
+		transition: $tranisition__basic;
+		box-shadow: 0 0 22px #00000082;
+		width: 100%;
+	}
+	.toggled #primary-menu  {
+		right: 0;
+	}
+}
 
 .main-navigation {
 	ul {
@@ -111,8 +138,10 @@
 				transform: translateY(-13px) rotate(-45deg);
 			}
 		}
-		ul {
-			display: block;
+		@media screen and (max-width: 999px) {
+			ul {
+				display: block;
+			}
 		}
 	}
 }
