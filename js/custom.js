@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
     alert('You activated the custom.js file - delete this line to get rid of this annoying message');
 
     // EXAMPLE GLIDE SETUP - Find and set up sliders if their wrapper exists on the page
-    // let blogSliderlider = document.getElementsByClassName('blog-glide');
+    // let blogSlider = document.getElementsByClassName('blog-glide');
       
-    // if (blogSliderlider.length > 0) {
+    // if (blogSlider.length > 0) {
     //     new Glide('.blog-glide', {
     //         type: 'carousel',
     //         perView: 3,
