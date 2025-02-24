@@ -22,3 +22,15 @@ main, aside, .footer-inner, .masthead-inner {
 		max-width: 100dvw;
 	}
 }
+
+// Add more side padding to iPad and small laptop sized screens
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+	main, aside, .footer-inner, .masthead-inner {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+	.alignfull > div:not(.alignfull) {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+}

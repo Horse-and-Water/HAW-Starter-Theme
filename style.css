@@ -271,6 +271,11 @@ main, footer, header:not(.entry-header) { width: 100%; }
 
 main, aside, .footer-inner, .masthead-inner { max-width: 1500px; margin: auto; padding: 30px 30px; }
 
+@media screen and (max-width: 1500px) { main, aside, .footer-inner, .masthead-inner { max-width: 100dvw; } }
+
+@media screen and (min-width: 768px) and (max-width: 1400px) { main, aside, .footer-inner, .masthead-inner { padding-left: 80px; padding-right: 80px; }
+	.alignfull > div:not(.alignfull) { padding-left: 80px; padding-right: 80px; } }
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
