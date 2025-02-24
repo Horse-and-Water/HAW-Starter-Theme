@@ -38,24 +38,24 @@ add_filter( 'login_headerurl', 'my_login_logo_url' );
 // UNCOMMENT FOR CUSTOM WORDPRESS ADMIN THEME
 // BE SURE TO GENERATE AND ADD THEME CSS FILE FIRST
 //Custom stylesheet for admin (generated at https://wpadmincolors.com/)
-/* function wpacg_qha_admin_color_scheme() {
+/* function wpacg_custom_admin_color_scheme() {
     //Get the theme directory
     $theme_dir = get_stylesheet_directory_uri().'/custom-admin';
       
-    //QHA
-    wp_admin_css_color( 'qha', __( 'QHA' ),
-        $theme_dir . '/qha.css',
+    //Your theme style's and colours
+    wp_admin_css_color( 'your_theme_name', __( 'Your Theme Name' ),
+        $theme_dir . '/custom-admin.css',
         array( '#222222', '#fff', '#d54e21' , '#b79d66')
     );
 }
-add_action('admin_init', 'wpacg_qha_admin_color_scheme'); */
+add_action('admin_init', 'wpacg_custom_admin_color_scheme'); */
 
 
 // UNCOMMENT TO FORCE ALL ADMIN USERS TO USE CUSTOM THEME STYLING
 // Force all users to use the custom admin colour scheme
 /*add_filter( 'get_user_option_admin_color', function( $color_scheme ) {
     
-    $color_scheme = 'qha';
+    $color_scheme = 'your_theme_name';
         
     return $color_scheme;
         
