@@ -42,7 +42,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Captions
 	- Galleries
 # plugins
-	- Jetpack infinite scroll
+	- Glide js
 # Utilities
 	- Accessibility
 	- Alignments
@@ -406,9 +406,7 @@ main, aside, .footer-inner, .masthead-inner { max-width: 1500px; margin: auto; p
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
-/* Jetpack infinite scroll
---------------------------------------------- */
-/* Glide
+/* Glide JS
 --------------------------------------------- */
 /*--------------------------------------------------------------
 # Utilities
