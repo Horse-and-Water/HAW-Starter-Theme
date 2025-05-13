@@ -155,14 +155,14 @@
 	cursor: pointer;
 	span {
 		width: 50px;
-		height: 5px;
+		height: 4px;
 		background-color: $color__black;
 		display: block;
-		margin: 8px auto;
+		margin: 9px auto;
 		-webkit-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
-		border-radius: 3px;
+		border-radius: 4px;
 		&:nth-child(2), &:nth-child(3) {
 			margin-top: 6px;
 		}
