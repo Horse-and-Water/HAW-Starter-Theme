@@ -69,19 +69,16 @@ Now you're ready to go! The next step is easy to say, but harder to do: make an 
 
 Good luck!
 
-Todo
----------------
-(These are the changes that will make this theme different to _s)
-- Add variables and CSS for admin screen styling
-- Nav padding
-- custom styles to login
-
 ## How the HAW Starter theme differs to regular [_s (underscores)](https://github.com/Automattic/_s)
 ### Structure
 - The sidebars and comments sections have been commented out on most templates by default
 - Updated header.php to include hamburger navigation instead of button
 - Added custom logo to WP login form in `inc/custom-login.php`
-- Added ©, site title and link to H&W website to the footer
+- Added ©, site title and Privacy Policy to the footer
+- Added img folder for easy storage of theme images
+- Added glide.js for easy to use slider, just uncomment in functions.php and style.scss
+- Added rellax.js for lightweight parrallax, just uncomment in functions.php
+- Added php functionality for custom scripts, Google Fonts, Adobe Fonts and Google analytics (you guessed it ... just uncomment!)
 ### Styling
 - Added variables for fonts and colours
 - Added basic buttons styles
@@ -90,6 +87,5 @@ Todo
 - Updated header styles to be logo on the left and menu on the right
 
 ### Future updates
-- Add [Lightning CSS](https://lightningcss.dev/docs.html)
 - Move custom login files to its own plugin?
 - Addon for optional CSS animation library
