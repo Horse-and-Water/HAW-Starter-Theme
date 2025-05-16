@@ -16,7 +16,7 @@
 			<div class="site-info">
 				<?php echo '© ';  bloginfo( 'name' ); echo date(' Y'); ?>
 				<span class="sep"> | </span>
-				<span><a href="https://horseandwater.com.au/" target="_blank" rel="nofollow">H&W.</a></span>
+				<span><a href="<?php echo get_privacy_policy_url(); ?>" rel="nofollow">Privacy Policy</a></span>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
