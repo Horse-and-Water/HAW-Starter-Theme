@@ -62,6 +62,14 @@
 	for ( const link of links ) {
 		link.addEventListener( 'focus', toggleFocus, true );
 		link.addEventListener( 'blur', toggleFocus, true );
+		// Remove toggle class on menu item click (for anchor tags)
+		link.addEventListener( 'click', function() {
+			// Only remove toggled class if it's active
+			if ( siteNavigation.classList.contains( 'toggled' ) ) {
+				siteNavigation.classList.remove( 'toggled' );
+				hamburger.setAttribute( 'aria-expanded', 'false' );
+			}
+		});
 	}
 
 	// Toggle focus each time a menu link with children receive a touch event.
